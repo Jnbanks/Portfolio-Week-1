@@ -1,22 +1,26 @@
 # Portfolio-Week-1
 
-## Acceptance Criteria
-
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
+User Story
+AS A Job Seeker
+I WANT to provide a clean and functional portfolio
+SO THAT I can showcase my projects to companies looking to hire someone with my qualifications
 
 ```
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
+GIVEN An employer needs to see my work
+WHEN they load my portfolio
+THEN they are presented with my name, photo, and links to sections about me, my work, and how to contact me
+WHEN they click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+WHEN they click on the link to the section about my work
+THEN the UI scrolls to a section with titled images of the my projects
+WHEN they are presented with the my first application
+THEN that application's image is larger in size than the others
+WHEN they click on the images of the applications
+THEN they are taken to that deployed application
+WHEN they resize the page or view the site on various screens and devices
+THEN they are presented with a responsive layout that adapts to their viewport
 ```
+Link to live webpage: https://jnbanks.github.io/Portfolio-Week-1/
+Link to Github repo: https://github.com/Jnbanks/Portfolio-Week-1
+Screenshot: /Users/jonathanbanks/code/Portfolio-Week-1/images/Screen Shot 2022-03-29 at 9.09.17 PM.png
 

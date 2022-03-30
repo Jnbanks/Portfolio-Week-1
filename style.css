@@ -1,12 +1,15 @@
+ /*Set the webpage background color and remove margins */
 body {
     background: rgb(236, 236, 236);
     margin: 0;
 }
+/* organize the elements on the main element of the page to adapt to the view screen. make space around it of 20 pixels */
 main {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
+/* make the aside (sidebars) elements occupy 25% of the screen as a column. make them fit to the view screen. give them a border on the right */
 aside {
     flex: 25%;
     padding: 20px;
@@ -14,19 +17,23 @@ aside {
     padding: 10px;
     border-right: 5px solid rgb(35, 83, 35);
 }
+/* sidebar titles appear on the right with space around them */
 aside h1 {
     text-align: end;
     margin: 20px;
     font-size: 200%;
 }
+/* the content in the main elements appears on the right and occupies 75% of the view screen */
 section {
     flex: 75%;
     padding: 20px;
 }
+/* the project content fits to the view screen and adjusts to its size */
 .project-section {
     display: flex;
     flex-wrap: wrap;
 }
+/* My name and the links appear on the top "toolbar", centered and lined up from left to right, with space in between them */
 .main-heading {
     display: flex;
     justify-content: space-between;
@@ -34,27 +41,32 @@ section {
     padding: 1%;
     background:rgb(78, 72, 52);
 }
+/* My name is large, in white text and has space around it */
 .main-heading h1 {
     font-size: 350%;
     color: rgb(255, 255, 255);
     padding: 20px;
 }
+/* the list items adjust to screen size and organize in a row */
 .nav-ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
     list-style: none;
 }
+/* the list items are bold and white text */
 .nav-a {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
+/* the list items which are my contact information organize in the center of the "footer bar" at the bottom of the page and adjust to the screen size*/
 .section-contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
 }
+/* my picture is set to match the height of the background image behind it, set to be centered, given rounded border */
 .profpic {
     position: relative;
     width: 42%;
@@ -63,21 +75,25 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
+/* the background is set to be behind the profile image and to fill the entire width of the screen */
 .background-wood-art {
     position:absolute;
     z-index: -1;
     display: block;
     width: 100%;
 }
+/* This sets the images attached to my projects to fill their entire element blocks */
 .project-section img, a {
     width: 100%;
 }
+/* This sets the top project image to fill completely the width of it's element block, and to adjust to the view screen */
 .card-prework {
     width: 100%;
     text-align: center;
     display: flex;
     flex: wrap;  
 }
+/* This makes the other project images and titles fit half of their element block and to adjust to the screen. they arrange side by side until the view screen is too small to accomodate that arrangment, upon which point they arrange in a column, one above the other */
 .card {
     text-align: center;
     border-style: solid;
@@ -86,6 +102,7 @@ section {
     display: flex;
     flex: wrap;
 }
+/* the project titles have green backgrounds, white text and position themselves over the images */
 div h3 {
     padding: 0.5em;
     background:rgb(35, 83, 35);
