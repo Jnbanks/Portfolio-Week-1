@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+ 
  /*Set the webpage background color and remove margins */
 body {
     background: rgb(236, 236, 236);
@@ -39,7 +43,7 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background:rgb(78, 72, 52);
+    background:rgb(47, 43, 31);
 }
 /* My name is large, in white text and has space around it */
 .main-heading h1 {
@@ -58,6 +62,14 @@ section {
 .nav-a {
     color: rgb(255, 255, 255);
     font-weight: bold;
+    padding: 8px;
+}
+.footer-ul {
+    justify-content: space-around;
+    display: flex;
+}
+.footer-li {
+    padding: 8px;
 }
 /* the list items which are my contact information organize in the center of the "footer bar" at the bottom of the page and adjust to the screen size*/
 .section-contacts {
@@ -108,4 +120,42 @@ div h3 {
     background:rgb(35, 83, 35);
     color:rgb(255, 255, 255);
     position: absolute;
+}
+/* For mobile phones */
+@media only screen and (max-width: 600px) {
+    .main-heading {flex-direction: column;}
+    .card-prework {text-align: center; border-style: solid; border-width: 1px; width: 60%; display: flex; flex: wrap;}
+    .card {text-align: center; border-style: solid; border-width: 1px; width: 60%;    display: flex; flex: wrap;}
+    main {flex-direction: column; display: flex; flex-wrap: wrap; padding: 0.1rem;}
+    aside {justify-content: center;flex-wrap: wrap; padding: 0.1rem; border-right: none;}
+    aside h1 {text-align: center; padding:0.1rem; margin: 0.2rem; font-size: 200%;}
+    .project-section {justify-content: center; flex-wrap: wrap; align-items: center;}
+    .section-contacts {display: flex; justify-content: center; align-items: center;
+    padding: 1%;}
+    main section p {text-align: center; justify-content: center; padding:0.1rem}
+    .nav-ul {flex-direction: column; align-items: center;}
+    .nav-ul li {justify-content: space-around; padding: 0.3rem}
+    .main-heading h1 {text-align: center; padding-bottom: 0.2rem;}
+    .footer-ul {flex-direction: column;}
+}
+
+/* For Tablet */
+@media only screen and (min-width: 601px) and (max-width: 855px) {
+    .main-heading {flex-direction: column;}
+    .card-prework {text-align: center; border-style: solid; border-width: 1px; width: 60%; display: flex; flex: wrap;}
+    .card {text-align: center; border-style: solid; border-width: 1px; width: 60%;    display: flex; flex: wrap;}
+    main {flex-direction: column; display: flex; flex-wrap: wrap; padding: 20px;}
+    aside {justify-content: center;flex-wrap: wrap; padding: 5px; border-right: none;}
+    aside h1 {text-align: center; margin: 10px; font-size: 200%;}
+    .project-section {justify-content: center; flex-wrap: wrap; align-items: center;}
+    .section-contacts {display: flex; justify-content: center; align-items: center;
+    padding: 1%;}
+    main section p {text-align: center; justify-content: center;}
+}
+/* For desktop */
+@media only screen and (min-width: 856px) {
+    .main-heading { display: flex; justify-content: space-between; align-items: center;
+        padding: 1%;}
+    .card-prework {width: 100%;  text-align: center;  display: flex;  flex: wrap;}
+    .card {  text-align: center;  border-style: solid;  border-width: 1px;  width: 50%;   display: flex;  flex: wrap;}
 }
